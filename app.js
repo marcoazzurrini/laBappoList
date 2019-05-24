@@ -28,17 +28,17 @@ document.addEventListener('DOMContentLoaded', getTasks);
 // FAIL ALERT
 const failAlert = document.createElement('div');
 failAlert.classList.add('alert', 'alert-danger');
-failAlert.innerHTML = 'Please Fill The Field';
+failAlert.innerHTML = 'Riempi Ognihosa!';
 
 // SUCCESS ALERT
 const successAlert = document.createElement('div');
 successAlert.classList.add('alert', 'alert-success');
-successAlert.innerHTML = 'Added Successfully!';
+successAlert.innerHTML = 'Perfetto, Incastrao Alla Grande!';
 
 // REMOVE ALERT
 const removeAlert = document.createElement('div');
 removeAlert.classList.add('alert', 'alert-warning');
-removeAlert.innerHTML = 'Item Removed';
+removeAlert.innerHTML = 'Coso scastrato';
 
 //GET TASKS FROM LS
 function getTasks() {
