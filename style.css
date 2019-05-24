@@ -1,3 +1,18 @@
 #stemma-toscana {
     max-width: 150px;
 }
+
+ul {
+    height: 100%;
+}
+
+.card {
+    border: none !important;
+}
+
+@media(max-width: 600px) {
+    .date {
+        font-size: 15px;
+        padding: 0;
+    }
+}
