@@ -122,7 +122,7 @@ function addTodo(e) {
             dateInputDay = dateInputValueArr[2],
             dateInputNum = `${dateInputYear}${dateInputMonth}${dateInputDay}`;
 
-        if (dateInputNum < minDateNumber) {
+        if (dateInputNum < minDateNumber || dateInputYear.length > 4 || parseInt(dateInputYear, 10) > 2099) {
             // FAIL DATE ALERT
             const DateFailAlert = document.createElement('div');
             DateFailAlert.classList.add('alert', 'alert-danger');
@@ -133,6 +133,9 @@ function addTodo(e) {
             setTimeout(function () {
                 alertDiv.innerHTML = '';
             }, 4000);
+            // Clear fields
+            todoInput.value = '';
+            dateInput.value = '';
         } else {
 
 
